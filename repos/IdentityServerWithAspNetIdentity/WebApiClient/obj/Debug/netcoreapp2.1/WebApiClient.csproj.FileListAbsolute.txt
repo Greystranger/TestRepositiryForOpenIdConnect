@@ -1,0 +1,14 @@
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\bin\Debug\netcoreapp2.1\WebApiClient.deps.json
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\bin\Debug\netcoreapp2.1\WebApiClient.runtimeconfig.json
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\bin\Debug\netcoreapp2.1\WebApiClient.runtimeconfig.dev.json
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\bin\Debug\netcoreapp2.1\WebApiClient.dll
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\bin\Debug\netcoreapp2.1\WebApiClient.pdb
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.csprojAssemblyReference.cache
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.csproj.CoreCompileInputs.cache
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.RazorAssemblyInfo.cache
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.RazorAssemblyInfo.cs
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.AssemblyInfoInputs.cache
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.AssemblyInfo.cs
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.RazorTargetAssemblyInfo.cache
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.dll
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\WebApiClient\obj\Debug\netcoreapp2.1\WebApiClient.pdb

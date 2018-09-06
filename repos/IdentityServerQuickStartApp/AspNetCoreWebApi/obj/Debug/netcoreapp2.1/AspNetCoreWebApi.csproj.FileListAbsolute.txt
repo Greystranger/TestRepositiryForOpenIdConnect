@@ -1,0 +1,14 @@
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\bin\Debug\netcoreapp2.1\AspNetCoreWebApi.deps.json
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\bin\Debug\netcoreapp2.1\AspNetCoreWebApi.runtimeconfig.json
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\bin\Debug\netcoreapp2.1\AspNetCoreWebApi.runtimeconfig.dev.json
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\bin\Debug\netcoreapp2.1\AspNetCoreWebApi.dll
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\bin\Debug\netcoreapp2.1\AspNetCoreWebApi.pdb
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.csprojAssemblyReference.cache
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.RazorAssemblyInfo.cache
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.RazorAssemblyInfo.cs
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.AssemblyInfoInputs.cache
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.AssemblyInfo.cs
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.dll
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\AspNetCoreWebApi\obj\Debug\netcoreapp2.1\AspNetCoreWebApi.pdb

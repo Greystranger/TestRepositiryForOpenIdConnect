@@ -1,0 +1,10 @@
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\bin\Debug\netcoreapp2.1\ConsoleClientApp.deps.json
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\bin\Debug\netcoreapp2.1\ConsoleClientApp.runtimeconfig.json
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\bin\Debug\netcoreapp2.1\ConsoleClientApp.runtimeconfig.dev.json
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\bin\Debug\netcoreapp2.1\ConsoleClientApp.dll
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\bin\Debug\netcoreapp2.1\ConsoleClientApp.pdb
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\obj\Debug\netcoreapp2.1\ConsoleClientApp.csproj.CoreCompileInputs.cache
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\obj\Debug\netcoreapp2.1\ConsoleClientApp.AssemblyInfoInputs.cache
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\obj\Debug\netcoreapp2.1\ConsoleClientApp.AssemblyInfo.cs
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\obj\Debug\netcoreapp2.1\ConsoleClientApp.dll
+C:\Users\Yatsenko\source\repos\IdentityServerWithAspNetIdentity\ConsoleClientApp\obj\Debug\netcoreapp2.1\ConsoleClientApp.pdb

@@ -1,0 +1,11 @@
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\bin\Debug\netcoreapp2.1\WinAuthThroughAD.deps.json
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\bin\Debug\netcoreapp2.1\WinAuthThroughAD.runtimeconfig.json
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\bin\Debug\netcoreapp2.1\WinAuthThroughAD.runtimeconfig.dev.json
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\bin\Debug\netcoreapp2.1\WinAuthThroughAD.dll
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\obj\Debug\netcoreapp2.1\WinAuthThroughAD.csprojAssemblyReference.cache
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\obj\Debug\netcoreapp2.1\WinAuthThroughAD.csproj.CoreCompileInputs.cache
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\obj\Debug\netcoreapp2.1\WinAuthThroughAD.AssemblyInfoInputs.cache
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\obj\Debug\netcoreapp2.1\WinAuthThroughAD.AssemblyInfo.cs
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\bin\Debug\netcoreapp2.1\WinAuthThroughAD.pdb
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\obj\Debug\netcoreapp2.1\WinAuthThroughAD.dll
+C:\Users\Yatsenko\source\repos\WinAuthThroughAD\WinAuthThroughAD\obj\Debug\netcoreapp2.1\WinAuthThroughAD.pdb

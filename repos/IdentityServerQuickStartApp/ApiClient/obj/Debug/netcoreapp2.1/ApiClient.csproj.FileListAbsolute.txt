@@ -1,0 +1,11 @@
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\bin\Debug\netcoreapp2.1\ApiClient.deps.json
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\bin\Debug\netcoreapp2.1\ApiClient.runtimeconfig.json
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\bin\Debug\netcoreapp2.1\ApiClient.runtimeconfig.dev.json
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\bin\Debug\netcoreapp2.1\ApiClient.dll
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\bin\Debug\netcoreapp2.1\ApiClient.pdb
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\obj\Debug\netcoreapp2.1\ApiClient.csprojAssemblyReference.cache
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\obj\Debug\netcoreapp2.1\ApiClient.csproj.CoreCompileInputs.cache
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\obj\Debug\netcoreapp2.1\ApiClient.AssemblyInfoInputs.cache
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\obj\Debug\netcoreapp2.1\ApiClient.AssemblyInfo.cs
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\obj\Debug\netcoreapp2.1\ApiClient.dll
+C:\Users\Yatsenko\source\repos\IdentityServerQuickStartApp\ApiClient\obj\Debug\netcoreapp2.1\ApiClient.pdb
