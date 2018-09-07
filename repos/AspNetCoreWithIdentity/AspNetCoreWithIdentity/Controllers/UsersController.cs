@@ -11,9 +11,18 @@ namespace AspNetCoreWithIdentity.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public UsersController(UserManager<ApplicationUser> userManager)
+        private readonly IPasswordValidator<ApplicationUser> _passwordValidator;
+
+        private readonly IPasswordHasher<ApplicationUser> _passwordHasher;
+
+        public UsersController(
+            UserManager<ApplicationUser> userManager,
+            IPasswordValidator<ApplicationUser> passwordValidator,
+            IPasswordHasher<ApplicationUser> passwordHasher)
         {
             _userManager = userManager;
+            _passwordValidator = passwordValidator;
+            _passwordHasher = passwordHasher;
         }
 
         public IActionResult Index()
@@ -95,6 +104,55 @@ namespace AspNetCoreWithIdentity.Controllers
                         ModelState.AddModelError(error.Code, error.Description);
                     }
                 }
+            }
+
+            return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ChangePassword(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var model = new ChangePasswordViewModel
+            {
+                Id = user.Id,
+                Email = user.Email
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByIdAsync(model.Id);
+                if (user != null)
+                {
+                    var passwordValidationResult = await _passwordValidator
+                        .ValidateAsync(_userManager, user, model.NewPassword);
+
+                    if (passwordValidationResult.Succeeded)
+                    {
+                        user.PasswordHash = _passwordHasher.HashPassword(user, model.NewPassword);
+                        await _userManager.UpdateAsync(user);
+
+                        return RedirectToAction("Index");
+                    }
+
+                    foreach (var error in passwordValidationResult.Errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                    }
+                }
+
+                ModelState.AddModelError(string.Empty, "User is not found");
             }
 
             return View(model);
