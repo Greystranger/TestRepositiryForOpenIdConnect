@@ -7,27 +7,30 @@
 <h2>Registration new User</h2>
 <form method="post" asp-controller="Account" asp-action="Register">
     <div asp-validation-summary="ModelOnly"></div>
-    <div>
+    <div class="col-md-10">
         <label asp-for="Email"></label><br />
         <input asp-for="Email" />
         <span asp-validation-for="Email"></span>
     </div>
-    <div>
+    <div class="col-md-10">
         <label asp-for="Year"></label><br />
         <input asp-for="Year" />
         <span asp-validation-for="Year"></span>
     </div>
-    <div>
+    <div class="col-md-10">
         <label asp-for="Password"></label><br />
         <input asp-for="Password" />
         <span asp-validation-for="Password"></span>
     </div>
-    <div>
+    <div class="col-md-10">
         <label asp-for="PasswordConfirm"></label><br />
         <input asp-for="PasswordConfirm" />
         <span asp-validation-for="PasswordConfirm"></span>
     </div>
-    <div>
-        <input type="submit" value="Regisration" />
+    <div class="col-md-10">
+        <p>&nbsp;</p>
+    </div>
+    <div class="col-md-3">
+        <input class="btn btn-success" type="submit" value="Regisration" />
     </div>
 </form>
