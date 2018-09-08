@@ -9,6 +9,7 @@ _ReSharper.*/
 *.sdf
 bin/
 obj/
+.vs/
 Debug/
 Release/
 *.opensdf
