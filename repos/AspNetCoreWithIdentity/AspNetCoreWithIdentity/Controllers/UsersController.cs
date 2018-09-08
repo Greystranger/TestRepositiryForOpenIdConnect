@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using AspNetCoreWithIdentity.Models;
 using AspNetCoreWithIdentity.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -159,6 +160,7 @@ namespace AspNetCoreWithIdentity.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "administrator")]
         public async Task<IActionResult> Delete(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
