@@ -60,13 +60,13 @@ namespace AspNetCoreWithIdentity.Controllers
             if (user != null)
             {
                 var userRoles = await _userManager.GetRolesAsync(user);
-                var roles = _roleManager.Roles.ToList();
+                var allRoles = _roleManager.Roles.ToList();
                 var model = new ChangeRoleViewModel
                 {
                     UserId = user.Id,
                     UserEmail = user.Email,
                     UserRoles = userRoles,
-                    AllRoles = roles
+                    AllRoles = allRoles
                 };
 
                 return View(model);
@@ -82,7 +82,6 @@ namespace AspNetCoreWithIdentity.Controllers
             if (user != null)
             {
                 var userRoles = await _userManager.GetRolesAsync(user);
-                var allRoles = _roleManager.Roles.ToList();
                 var addedRolesPerUser = roles.Except(userRoles);
                 var removedRolesPerUser = userRoles.Except(roles);
 
