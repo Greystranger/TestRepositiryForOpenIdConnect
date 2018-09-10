@@ -41,12 +41,10 @@ namespace AspNetCoreWithIdentity.Controllers
                     await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Index", "Home");
                 }
-                else
+                
+                foreach (var error in result.Errors)
                 {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
+                    ModelState.AddModelError(error.Code, error.Description);
                 }
             }
 
@@ -76,16 +74,12 @@ namespace AspNetCoreWithIdentity.Controllers
                 {
                     return Redirect(model.ReturnUrl);
                 }
-                else
-                {
-                    return RedirectToAction("Index", "Home");
-                }
+
+                return RedirectToAction("Index", "Home");
             }
-            else
-            {
-                ModelState.AddModelError("", "Login and (or) password are incorrect");
-                return View(model);
-            }
+
+            ModelState.AddModelError("", "Login and (or) password are incorrect");
+            return View(model);
         }
 
         [HttpPost]
