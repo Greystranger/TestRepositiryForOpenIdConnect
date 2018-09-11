@@ -27,9 +27,10 @@ namespace AspNetCoreWithIdentity
             });
 
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-                    {
-                        options.SignIn.RequireConfirmedEmail = true;
-                    })
+                {
+                    options.User.RequireUniqueEmail = true;
+                    options.SignIn.RequireConfirmedEmail = true;
+                })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
