@@ -28,7 +28,9 @@ namespace AspNetCoreWithIdentity
                 var admin = new ApplicationUser
                 {
                     Email = adminEmail,
-                    UserName = adminEmail
+                    UserName = adminEmail,
+                    Year = 1970,
+                    EmailConfirmed = true
                 };
 
                 var createUserResult = await userManager.CreateAsync(admin, password);

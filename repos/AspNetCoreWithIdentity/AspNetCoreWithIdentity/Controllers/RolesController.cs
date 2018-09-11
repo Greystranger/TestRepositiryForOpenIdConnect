@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetCoreWithIdentity.Models;
+using AspNetCoreWithIdentity.Services;
 using AspNetCoreWithIdentity.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -44,10 +44,7 @@ namespace AspNetCoreWithIdentity.Controllers
                     return RedirectToAction("Index");
                 }
 
-                foreach (var error in createRoleResult.Errors)
-                {
-                    ModelState.AddModelError(error.Code, error.Description);
-                }
+                ErrorHandlerService.AddErrorsToModelState(ModelState, createRoleResult);
             }
 
             return View(name);
@@ -111,10 +108,7 @@ namespace AspNetCoreWithIdentity.Controllers
                 var deleteResult = await _roleManager.DeleteAsync(role);
                 if (!deleteResult.Succeeded)
                 {
-                    foreach (var error in deleteResult.Errors)
-                    {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
+                    ErrorHandlerService.AddErrorsToModelState(ModelState, deleteResult);
                 }
             }
             else

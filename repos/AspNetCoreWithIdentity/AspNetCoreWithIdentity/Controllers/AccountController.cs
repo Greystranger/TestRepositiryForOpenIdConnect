@@ -54,14 +54,10 @@ namespace AspNetCoreWithIdentity.Controllers
                     await EmailService.SendEmailAsync(registerViewModel.Email, "Confirm your account",
                         $"Confirm your registration follow the link: <a href='{callBack}'>link</a>");
 
-                    //await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Index", "Home");
                 }
-                
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError(error.Code, error.Description);
-                }
+
+                ErrorHandlerService.AddErrorsToModelState(ModelState, result);
             }
 
             return View(registerViewModel);
@@ -194,19 +190,16 @@ namespace AspNetCoreWithIdentity.Controllers
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null)
             {
-                return RedirectToAction(nameof(AccountController.ResetPasswordConfirmation), "Account");
+                return RedirectToAction(nameof(ResetPasswordConfirmation), "Account");
             }
 
             var resetPasswordResult = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
             if (resetPasswordResult.Succeeded)
             {
-                return RedirectToAction(nameof(AccountController.ResetPasswordConfirmation), "Account");
+                return RedirectToAction(nameof(ResetPasswordConfirmation), "Account");
             }
 
-            foreach (var error in resetPasswordResult.Errors)
-            {
-                ModelState.AddModelError(error.Code, error.Description);
-            }
+            ErrorHandlerService.AddErrorsToModelState(ModelState, resetPasswordResult);
 
             return View(model);
         }

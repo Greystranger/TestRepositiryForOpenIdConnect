@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using AspNetCoreWithIdentity.Models;
+using AspNetCoreWithIdentity.Services;
 using AspNetCoreWithIdentity.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -54,10 +55,7 @@ namespace AspNetCoreWithIdentity.Controllers
                     return RedirectToAction("Index");
                 }
 
-                foreach (var error in createResult.Errors)
-                {
-                    ModelState.AddModelError(error.Code, error.Description);
-                }
+                ErrorHandlerService.AddErrorsToModelState(ModelState, createResult);
             }
 
             return View(model);
@@ -99,11 +97,8 @@ namespace AspNetCoreWithIdentity.Controllers
                     {
                         return RedirectToAction("Index");
                     }
-                    
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
+
+                    ErrorHandlerService.AddErrorsToModelState(ModelState, result);
                 }
             }
 
@@ -147,10 +142,7 @@ namespace AspNetCoreWithIdentity.Controllers
                         return RedirectToAction("Index");
                     }
 
-                    foreach (var error in passwordValidationResult.Errors)
-                    {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
+                    ErrorHandlerService.AddErrorsToModelState(ModelState, passwordValidationResult);
                 }
 
                 ModelState.AddModelError(string.Empty, "User is not found");
@@ -169,10 +161,7 @@ namespace AspNetCoreWithIdentity.Controllers
                 var deleteResult = await _userManager.DeleteAsync(user);
                 if (!deleteResult.Succeeded)
                 {
-                    foreach (var error in deleteResult.Errors)
-                    {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
+                    ErrorHandlerService.AddErrorsToModelState(ModelState, deleteResult);
                 }
             }
 
