@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorsTestApplication", "Cors
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorsClientApp", "CorsClientApp\CorsClientApp.csproj", "{08605FF7-6141-4287-9627-7792E6A1447C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcCorsClientApp", "MvcCorsClientApp\MvcCorsClientApp.csproj", "{1A1ECAA7-F44A-4FBB-8398-0493CE34D28B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{08605FF7-6141-4287-9627-7792E6A1447C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08605FF7-6141-4287-9627-7792E6A1447C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08605FF7-6141-4287-9627-7792E6A1447C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1ECAA7-F44A-4FBB-8398-0493CE34D28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1ECAA7-F44A-4FBB-8398-0493CE34D28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1ECAA7-F44A-4FBB-8398-0493CE34D28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1ECAA7-F44A-4FBB-8398-0493CE34D28B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
