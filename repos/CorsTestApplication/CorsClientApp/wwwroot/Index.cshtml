@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test CORS</title>
+</head>
+<body>
+<div id="result">
+ 
+</div>
+<div><p><button id="btn" value="Request">Request</button></p></div>
+ 
+<script>
+    var btn = document.getElementById("btn");
+    var result = document.getElementById("result");
+    var request = new XMLHttpRequest();
+ 
+    btn.addEventListener("click", function (e) {
+        request.open("GET", "https://localhost:5001/");
+        request.onreadystatechange = reqReadyStateChange;
+        request.send();
+    });
+ 
+    function reqReadyStateChange() {
+        if (request.readyState == 4) {
+            var status = request.status;
+            if (status == 200)
+                result.innerText = request.responseText;
+            else
+                result.innerText = request.statusText;
+        }
+    }
+</script>
+</body>
+</html>
