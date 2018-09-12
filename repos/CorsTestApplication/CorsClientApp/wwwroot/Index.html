@@ -5,22 +5,22 @@
     <title>Test CORS</title>
 </head>
 <body>
-<div id="result">
- 
-</div>
-<div><p><button id="btn" value="Request">Request</button></p></div>
- 
-<script>
+    <div id="result">
+
+    </div>
+    <div><p><button id="btn" value="Request">Request</button></p></div>
+
+    <script>
     var btn = document.getElementById("btn");
     var result = document.getElementById("result");
     var request = new XMLHttpRequest();
- 
+
     btn.addEventListener("click", function (e) {
         request.open("GET", "https://localhost:5001/");
         request.onreadystatechange = reqReadyStateChange;
         request.send();
     });
- 
+
     function reqReadyStateChange() {
         if (request.readyState === 4) {
             var status = request.status;
@@ -30,6 +30,6 @@
                 result.innerText = request.statusText;
         }
     }
-</script>
+    </script>
 </body>
 </html>
