@@ -11,7 +11,20 @@ namespace CorsTestApplication
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
+            services.AddCors(corsOptions =>
+            {
+                corsOptions.AddDefaultPolicy(corsPolicyBuilder =>
+                    corsPolicyBuilder.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials());
+
+                corsOptions.AddPolicy("ProductionPolicy", policyBuilder =>
+                    policyBuilder.WithOrigins("https://localhost:5001")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -22,12 +35,8 @@ namespace CorsTestApplication
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(builder =>
-            {
-                builder.AllowAnyHeader();
-                builder.AllowAnyMethod();
-                builder.AllowAnyOrigin();
-            });
+            //to change cors policy add policy name as a parameter ("ProductionPolicy" for example)
+            app.UseCors();
 
             app.Run(async (context) =>
             {

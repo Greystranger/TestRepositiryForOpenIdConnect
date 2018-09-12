@@ -17,6 +17,7 @@
 
     btn.addEventListener("click", function (e) {
         request.open("GET", "https://localhost:5001/");
+        request.withCredentials = true;
         request.onreadystatechange = reqReadyStateChange;
         request.send();
     });
