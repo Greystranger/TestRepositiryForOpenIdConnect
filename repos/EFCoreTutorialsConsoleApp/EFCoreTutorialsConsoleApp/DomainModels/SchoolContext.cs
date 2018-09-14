@@ -5,11 +5,6 @@ namespace EFCoreTutorialsConsoleApp.DomainModels
 {
     public class SchoolContext : DbContext
     {
-        public SchoolContext()
-        {
-            Database.EnsureCreated();
-        }
-
         public DbSet<Student> Students { get; set; }
 
         public DbSet<Course> Courses { get; set; }
