@@ -18,6 +18,8 @@ namespace EFCoreTutorialsConsoleApp.DomainModels.Entities
 
         public double Weight { get; set; }
 
+        public StudentAddress Address { get; set; }
+
         public int CourseId { get; set; }
 
         public Course Course { get; set; }
